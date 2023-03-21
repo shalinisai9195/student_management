@@ -3,9 +3,6 @@ import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-//import { Navigate } from 'react-router-dom';
-// import Table from 'react-bootstrap/Table'
-// import Button from 'react-bootstrap/Button';
 import {Table,Button} from 'react-bootstrap';
 import StudentList from './StudentList';
 
@@ -15,15 +12,15 @@ function Navbar() {
   let navigate = useNavigate('');
 
   const handleEdit = (id,name,batch,email,mobile) =>{
-    localStorage.setItem('Id',id);
-    localStorage.setItem('Name',name);
-    localStorage.setItem('Batch',batch);
-    localStorage.setItem('Email',email);
-    localStorage.setItem('Mobile',mobile);
+    localStorage.setItem('id',id);
+    localStorage.setItem('name',name);
+    localStorage.setItem('batch',batch);
+    localStorage.setItem('email',email);
+    localStorage.setItem('mobile',mobile);
 }
 
   const handleDelete = (id)=>{
-   // console.log(id)
+   
     const index = StudentList.map((e)=>{
       return e.id
   }).indexOf(id);

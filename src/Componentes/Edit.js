@@ -19,6 +19,8 @@ function Edit(){
        return e.id
    }).indexOf(id);
 
+   
+
    const handleSubmit = () => {
     
     let res = StudentList[index];
@@ -34,11 +36,11 @@ function Edit(){
   }
 
   useEffect(()=>{
-    setId(localStorage.getItem('Id'))
-    setName(localStorage.getItem('Name'))
-    setBatch(localStorage.getItem('Batch'))
-    setEmail(localStorage.getItem('Email'))
-    setMobile(localStorage.getItem('Mobile'))
+    setId(localStorage.getItem('id'))
+    setName(localStorage.getItem('name'))
+    setBatch(localStorage.getItem('batch'))
+    setEmail(localStorage.getItem('email'))
+    setMobile(localStorage.getItem('mobile'))
 
   },[])
 
