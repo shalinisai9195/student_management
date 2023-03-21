@@ -19,7 +19,7 @@ function Students(){
 
   const addStudent = (e) => {
     
-   // e.preventDefault()
+    e.preventDefault();
 
     // const ids = uuid();
     // console.log(ids)

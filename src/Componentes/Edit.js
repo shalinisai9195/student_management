@@ -29,7 +29,7 @@ function Edit(){
     res.name = name;
     res.batch = batch;
     res.email = email;
-    res.mobile = mobile
+    res.mobile = mobile;
    
     navigate('/nav-bar');
 
@@ -60,7 +60,7 @@ function Edit(){
       </Form.Group>
       <Form.Group className="mb-3" controlId="formEmail">
         <Form.Label> Email</Form.Label>
-        <Form.Control type="email" placeholder="Enter Email" value={email} style={{width:"50%"}} onChange={(e)=>setEmail(e.target.value)} />
+        <Form.Control type="email" placeholder="Enter Email" value={email} style={{width:"50%"}} onChange={(e)=>setEmail(e.target.value)} required />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formMobile">
         <Form.Label> Mobile</Form.Label>
